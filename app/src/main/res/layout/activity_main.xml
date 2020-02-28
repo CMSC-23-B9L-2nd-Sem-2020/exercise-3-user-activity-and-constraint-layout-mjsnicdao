@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_edit" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="219dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/small_padding"
+        android:textColor="#090505"
+        android:textColorHighlight="#FFFBFB"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/done_button" />
+
+    <TextView
+        android:id="@+id/box1"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/box2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/nickname_text"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_text"
+        app:layout_goneMarginRight="24dp"
+        tools:layout_margin="@dimen/margin_wide" />
+
+    <TextView
+        android:id="@+id/box2"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/box3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_text"
+        app:layout_goneMarginEnd="32dp"
+        app:layout_goneMarginRight="16dp"
+        tools:layout_margin="@dimen/margin_wide" />
+
+    <TextView
+        android:id="@+id/box3"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/box4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_text"
+        tools:layout_margin="@dimen/margin_wide" />
+
+    <TextView
+        android:id="@+id/box5"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_text"
+        app:layout_goneMarginEnd="32dp"
+        tools:layout_margin="@dimen/margin_wide" />
+
+    <TextView
+        android:id="@+id/box4"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/box5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_text"
+        app:layout_goneMarginEnd="32dp"
+        tools:layout_margin="@dimen/margin_wide" />
+
+    <TextView
+        android:id="@+id/box6"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/nickname_text"
+        app:layout_constraintTop_toBottomOf="@+id/box1" />
+
+    <TextView
+        android:id="@+id/box7"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box6"
+        app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+    <TextView
+        android:id="@+id/box8"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box7"
+        app:layout_constraintTop_toBottomOf="@+id/box3" />
+
+    <TextView
+        android:id="@+id/box9"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box8"
+        app:layout_constraintTop_toBottomOf="@+id/box4" />
+
+    <TextView
+        android:id="@+id/box10"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box9"
+        app:layout_constraintTop_toBottomOf="@+id/box5" />
+
+    <TextView
+        android:id="@+id/box11"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/nickname_text"
+        app:layout_constraintTop_toBottomOf="@+id/box6" />
+
+    <TextView
+        android:id="@+id/box12"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box11"
+        app:layout_constraintTop_toBottomOf="@+id/box7" />
+
+    <TextView
+        android:id="@+id/box15"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box14"
+        app:layout_constraintTop_toBottomOf="@+id/box10" />
+
+    <TextView
+        android:id="@+id/box14"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box13"
+        app:layout_constraintTop_toBottomOf="@+id/box9" />
+
+    <TextView
+        android:id="@+id/box13"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box12"
+        app:layout_constraintTop_toBottomOf="@+id/box8" />
+
+    <TextView
+        android:id="@+id/box16"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/nickname_text"
+        app:layout_constraintTop_toBottomOf="@+id/box11" />
+
+    <TextView
+        android:id="@+id/box20"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box19"
+        app:layout_constraintTop_toBottomOf="@+id/box15" />
+
+    <TextView
+        android:id="@+id/box18"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box19"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box17"
+        app:layout_constraintTop_toBottomOf="@+id/box13" />
+
+    <TextView
+        android:id="@+id/box19"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box20"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box18"
+        app:layout_constraintTop_toBottomOf="@+id/box14" />
+
+    <TextView
+        android:id="@+id/box17"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box16"
+        app:layout_constraintTop_toBottomOf="@+id/box12" />
+
+    <TextView
+        android:id="@+id/box21"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box22"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/nickname_text"
+        app:layout_constraintTop_toBottomOf="@+id/box16" />
+
+    <TextView
+        android:id="@+id/box24"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box23"
+        app:layout_constraintTop_toBottomOf="@+id/box19" />
+
+    <TextView
+        android:id="@+id/box22"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box23"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box21"
+        app:layout_constraintTop_toBottomOf="@+id/box17" />
+
+    <TextView
+        android:id="@+id/box23"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toStartOf="@+id/box24"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box22"
+        app:layout_constraintTop_toBottomOf="@+id/box18" />
+
+    <TextView
+        android:id="@+id/box25"
+        style="@style/light_box"
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_margin="@dimen/margin_wide"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box24"
+        app:layout_constraintTop_toBottomOf="@+id/box20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
